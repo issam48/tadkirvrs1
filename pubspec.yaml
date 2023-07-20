@@ -1,0 +1,49 @@
+name: esay1
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  awesome_dialog: ^3.0.2
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.2.9
+  firebase_core: ^2.7.0
+  google_fonts: ^4.0.3
+  localization: ^2.1.0
+  flutter_localizations:
+    sdk: flutter
+  scrollable_positioned_list: ^0.3.8
+  modal_progress_hud_nsn: ^0.4.0
+  cloud_firestore: ^4.8.0
+  flutter_local_notifications: ^14.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+flutter_icons:
+  image_path: "images/ico5.png"
+  android: true
+  ios: true
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
+    - assets/
+  fonts:
+    - family: quran
+      fonts:
+        - asset: assets/HafsSmart_08.ttf
+    - family: quraani
+      fonts:
+        - asset: assets/qurann.ttf
+
+
