@@ -72,7 +72,7 @@ class _quraanState extends State<quraan> {
                         child:
 
                         Text(
-                          "بسم الله الرحمان الرحيم",style: TextStyle(
+                          "بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ",style: TextStyle(
                             fontFamily: "quraani",fontSize: 40
                         ),
                         )
