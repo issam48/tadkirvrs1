@@ -54,9 +54,9 @@ class _quraanState extends State<quraan> {
         Scaffold(
 
           appBar: AppBar(
-            backgroundColor: Colors.green,
+            backgroundColor: Color(0xfff1d97c),
             title:Center(child:Text("سورة   ${widget.namesora} ",style: TextStyle(
-                fontFamily: "quraani",fontSize: 40
+                fontFamily: "quraani",fontSize: 40,color: Colors.black
             ),)) ,
           ),
           body:

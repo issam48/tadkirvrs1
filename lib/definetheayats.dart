@@ -218,8 +218,8 @@ class _HomeayasState extends State<Homeayas> {
                       if (parsedNumber == null) {
                         return 'من فضلك أدخل رقما صالحا';
                       }
-                      if (parsedNumber >= 114) {
-                        return 'يجب أن يكون رقم السورة أقل من 114';
+                      if (parsedNumber > 114) {
+                        return 'يجب أن يكون رقم السورة أقل من 115';
                       }
                       return null;
                     }),

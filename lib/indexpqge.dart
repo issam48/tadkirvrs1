@@ -43,6 +43,7 @@ class _indexState extends State<index> {
             ),
             ),
             ListTile(
+              
                 title:
                 Text("الحفظ",),leading: Icon(Icons.book),onTap:(){
               Navigator.of(context).push(MaterialPageRoute(builder:(context){
@@ -68,6 +69,7 @@ class _indexState extends State<index> {
         title: const Text(
           "السور",
           style: TextStyle(
+            color: Color(0xff0c0c0c),
             fontFamily: "quraani",
               fontSize: 50,
               fontWeight: FontWeight.bold,
@@ -75,12 +77,14 @@ class _indexState extends State<index> {
                 Shadow(
                     offset: Offset(1, 1),
                     blurRadius: 2.0,
+
                     color: Color.fromARGB(255, 0, 0, 0)
                 )
               ]
           ),
         ),
-        backgroundColor: const Color.fromARGB(255, 56, 115, 59),
+        backgroundColor: Color(0xfff1d97c),
+        //backgroundColor: const Color.fromARGB(255, 56, 115, 59),
       )
           ,body:
 
@@ -111,26 +115,42 @@ class _indexState extends State<index> {
   }
   Container indexCreator(/*quran,*/context){
     return Container(
+color: const Color(0xffcac0a5),
+//color: const Color.fromARGB(255, 57, 201, 45),
+      child:
+      ListView(
 
-      color: const Color.fromARGB(255, 221, 250, 236),
-      child: ListView(
         children: [
+          
           for (int i = 0; i < 114; i++)
             Container(
+
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("images/dd.png"),
+                      fit:BoxFit.cover
+                  )
+              ),
+
+
               width: 400,
 transformAlignment: Alignment.center,
-              color: i % 2 == 0
-                  ? const Color.fromARGB(255, 253, 247, 230)
-                  : const Color.fromARGB(255, 253, 251, 240),
+              
+             // color:
+             // i % 2 == 0
+               //   ? const Color.fromARGB(255, 253, 247, 230)
+               //   : const Color.fromARGB(255, 253, 251, 240),
               child: TextButton(
+
 
                 child: Row(
 
-mainAxisAlignment: MainAxisAlignment.start,
+mainAxisAlignment: MainAxisAlignment.center,
                   children: [
 
 
                    Container(
+
                     child: Text(
                       arabicName[i]['name'],
                       style: const TextStyle(
@@ -192,6 +212,7 @@ mainAxisAlignment: MainAxisAlignment.start,
             ),
 
         ],
+
       ),
 
     );
