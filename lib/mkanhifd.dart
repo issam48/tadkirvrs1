@@ -48,7 +48,7 @@ class _contatState extends State<contat> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             StreamBuilder<QuerySnapshot>(
-                stream: messagerf.where("hifdid",isEqualTo: widget.a).snapshots(),
+                stream: messagerf.where("hifdid",isEqualTo: widget.a).orderBy("time",descending: false).snapshots(),
                 builder:(context, snapshot){
                   List<affichemessage>messagewidg=[];
 

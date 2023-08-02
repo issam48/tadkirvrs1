@@ -25,7 +25,7 @@ class _listState extends State<list> {
       ),
       body: Container(
         child: FutureBuilder(
-          future: lista.where("userId", isEqualTo: FirebaseAuth.instance.currentUser!.uid).get() ,
+          future: lista.where("userId", isEqualTo: FirebaseAuth.instance.currentUser!.uid).orderBy("hifdtime",descending: true).get() ,
           builder: ( context,  snapshot) {
             if (snapshot.hasData) {
               return ListView.builder(
