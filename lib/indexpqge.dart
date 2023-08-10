@@ -125,7 +125,7 @@ color: const Color(0xffcac0a5),
           
           for (int i = 0; i < 114; i++)
             Container(
-
+padding: EdgeInsets.only(top: 5),
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("images/dd.png"),
